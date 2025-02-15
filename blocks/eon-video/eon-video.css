@@ -22,9 +22,9 @@
   aspect-ratio: 16 / 9;
 }
 
-lefttext a {
+.lefttext a {
     color: black !important;
 }
-lefttext a:hover {
+.lefttext a:hover {
     background-color: transparent !important;
 }
