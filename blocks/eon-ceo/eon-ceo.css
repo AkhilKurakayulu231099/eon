@@ -62,3 +62,11 @@
 .button-container a:hover {
   background-color: #003e5f;
 }
+
+eonceotxt a {
+    color: black !important;
+}
+eonceotxt a:hover {
+    background-color: transparent !important;
+}
+
