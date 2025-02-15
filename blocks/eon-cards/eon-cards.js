@@ -10,11 +10,11 @@ export default function decorate(block) {
     
     [...li.children].forEach((div) => {
       if (div.querySelector('picture')) {
-        div.classList.add('cards-card-image');
+        div.classList.add('cardimage');
       } else if (div.querySelector('p') && div.querySelector('p').textContent.trim()) {
-        div.classList.add('cards-card-header');
+        div.classList.add('cardheader');
       } else if (div.querySelector('a')) {
-        div.classList.add('cards-card-link');
+        div.classList.add('cardlink');
       }
     });
     
