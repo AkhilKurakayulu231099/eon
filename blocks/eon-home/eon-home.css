@@ -11,19 +11,18 @@
 
 .eonhometransimg {
     position: absolute;
-    top: 0;
+    top: 13%;
     left: 0;
-    width: 100%;
+    width: 65%;
     height: auto;
     z-index: 0;
 }
 
 .eonhomelink {
     position: absolute;
-    top: 50%;
+    padding-bottom: 5%;
     left: 0;
     transform: translateY(-50%);
-    z-index: 20;
 }
 
 .button-container {
