@@ -11,6 +11,7 @@ export default function decorate(block) {
       <path d="M6.957 11.207a1 1 0 01-1.414 0l-4.5-4.5a1 1 0 010-1.414l4.5-4.5a1 1 0 011.414 1.414L3.164 6l3.793 3.793a1 1 0 010 1.414z"></path>
     </svg>
   `;
+  block.append(arrowLeft);
 
   const arrowRight = document.createElement('div');
   arrowRight.classList.add('arrow-right');
@@ -19,8 +20,7 @@ export default function decorate(block) {
       <path d="M1.043 11.207a1 1 0 001.414 0l4.5-4.5a1 1 0 000-1.414l-4.5-4.5a1 1 0 00-1.414 1.414L4.836 6l-3.793 3.793a1 1 0 000 1.414z"></path>
     </svg>
   `;
-
-  block.append(arrowLeft, arrowRight);  // Append the arrows directly to the block
+  block.append(arrowRight);
 
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
