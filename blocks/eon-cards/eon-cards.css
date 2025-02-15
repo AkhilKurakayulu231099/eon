@@ -65,15 +65,17 @@
   margin: 0;
 }
 
-.cardlink a {
+.eon-cards > div > div > ul > li> div.button-container.cardlink > p > a {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #0072bb;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
   margin-top: 10px;
-  transition: background-color 0.3s ease;
+  padding: 0px 20px 0px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .cardlink a:hover {
