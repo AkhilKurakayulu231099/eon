@@ -24,7 +24,7 @@
     width: 65%;
     height: auto;
     z-index: 0;
-    padding: 0px 120px 0px;
+    padding: 0px 70px 0px;
 }
 
 .eonhomelink {
@@ -39,7 +39,7 @@
 }
 
 .eon-home > div.eonhomelink > div > p > a {
-    padding: 0px 120px 0px;
+    padding: 0px 70px 0px;
     background-color: transparent;
     color: white;
     border: none;
