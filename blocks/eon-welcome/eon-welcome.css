@@ -1,0 +1,50 @@
+.eon-home {
+    position: relative;
+    display: block;
+}
+
+.eonhomeimg {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.eonhometransimg {
+    position: absolute;
+    top: 13%;
+    left: 0;
+    width: 65%;
+    height: auto;
+    z-index: 0;
+    padding: 0px 20px 0px
+}
+
+.eonhomelink {
+    position: absolute;
+    padding-bottom: 5%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.button-container {
+    margin: 10px 0;
+}
+
+.eon-home > div.eonhomelink > div > p > a {
+    padding: 0px 20px 0px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.eon-home > div.eonhomelink > div > p > a::after {
+    content: '→'; /* You can replace this with a different arrow symbol or use a Unicode for a different arrow */
+    font-size: 18px; /* Adjust the size of the arrow */
+    margin-left: 15px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+}
