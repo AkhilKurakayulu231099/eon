@@ -1,31 +1,38 @@
+/* Main container for the cards */
 .eon-cards.block {
   position: relative;
-  overflow: hidden;  /* Hide the overflow of li elements */
+  overflow: hidden;  /* Ensure the content doesn't overflow */
 }
 
+/* List containing the cards */
 .eon-cards.block ul {
   display: flex;
   padding: 0;
   margin: 0;
   transition: transform 0.3s ease;
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  padding-bottom: 20px;  /* Optional: Add a little bottom padding */
 }
 
+/* Styling for each card */
 .eon-cards.block li {
   flex: 0 0 auto;
-  width: 400px; /* Increased width for larger cards */
-  height: 350px; /* Increased height for larger cards */
+  width: 400px;  /* Increase card width */
+  height: 350px;  /* Set a fixed height for the cards */
   margin: 0 15px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative; /* For positioning cardheader and cardlink */
+  position: relative;
   transition: transform 0.3s ease;
-  overflow: hidden; /* Hide anything outside the li element */
+  overflow: hidden;
+  cursor: pointer;  /* Change cursor on hover */
 }
 
+/* Card image */
 .cardimage {
   width: 100%;
-  height: 200px; /* Adjust as necessary */
+  height: 100%;  /* Make the image fill the entire card */
   position: relative;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -34,24 +41,14 @@
 
 .cardimage picture img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100%;  /* Ensure the image takes the entire height */
+  object-fit: cover;  /* Make sure the image covers the area without distortion */
 }
 
-.cardlink {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
-}
-
+/* Card header (title) */
 .cardheader {
   position: absolute;
-  bottom: 150px;
+  bottom: 150px;  /* Position at the bottom of the image */
   left: 0;
   right: 0;
   padding: 10px;
@@ -64,6 +61,18 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0;
+}
+
+/* Card link button */
+.cardlink {
+  position: absolute;
+  bottom: 10px;  /* Position at the bottom of the image */
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
 }
 
 .eon-cards > div > div > ul > li > div.button-container.cardlink > p > a {
@@ -79,10 +88,12 @@
   text-decoration: none;
 }
 
+/* Hover effect for the card button */
 .cardlink a:hover {
   background-color: #005f8c;
 }
 
+/* Scroll arrows styling */
 .eon-cards.block .arrow-left, .eon-cards.block .arrow-right {
   position: absolute;
   top: 50%;
@@ -92,7 +103,7 @@
   font-size: 24px;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 10;  /* Ensure the arrows appear on top of other elements */
   border-radius: 50%;
 }
 
@@ -106,5 +117,5 @@
 
 /* Adding hover effect to the cards */
 .eon-cards.block li:hover {
-  transform: scale(1.05);
+  transform: scale(1.05);  /* Slightly increase the size of the card on hover */
 }
