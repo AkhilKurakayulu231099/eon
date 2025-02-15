@@ -21,3 +21,10 @@
   height: 100%;
   aspect-ratio: 16 / 9;
 }
+
+lefttext a {
+    color: black !important;
+}
+lefttext a:hover {
+    background-color: transparent !important;
+}
