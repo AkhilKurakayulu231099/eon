@@ -1,6 +1,9 @@
 .eon-video > div {
   display: flex;
 }
+.eon-video {
+  padding: 50px;
+}
 
 .lefttext {
   width: 40%;
