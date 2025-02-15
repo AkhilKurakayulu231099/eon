@@ -4,7 +4,7 @@ export default function decorate(block) {
   const ul = document.createElement('ul');
 
   // Create the left and right arrows using the provided SVG
-  const arrowLeft = document.createElement('div');
+ /* const arrowLeft = document.createElement('div');
   arrowLeft.classList.add('arrow-left');
   arrowLeft.innerHTML = `
     <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@ export default function decorate(block) {
       <path d="M1.043 11.207a1 1 0 001.414 0l4.5-4.5a1 1 0 000-1.414l-4.5-4.5a1 1 0 00-1.414 1.414L4.836 6l-3.793 3.793a1 1 0 000 1.414z"></path>
     </svg>
   `;
-  block.append(arrowRight);
+  block.append(arrowRight);*/
 
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
