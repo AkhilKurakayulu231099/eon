@@ -1,58 +1,44 @@
-.eon-home {
-    position: relative;
-    display: block;
+/* Styling for the overall block */
+.eon-ceo.block {
+  display: flex;
+  padding-left: 20px;  /* Left padding for the container */
+  padding-right: 20px; /* Right padding for the container */
+  align-items: center;  /* Align items vertically to the center */
+  justify-content: space-between;  /* Space out the image and text */
 }
 
-.eonhomeimg {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-.eonhomeimg > div > picture > img{
-    width: 100%;
-    height: 580px;
-}
-.eonhometransimg > div > picture > img{
-    width: 800px;
-    height: 300px;
+/* Styling for the image container */
+.eonceoimg {
+  flex: 1;  /* Take up 50% of the container */
+  max-width: 50%; /* Ensure it occupies no more than 50% of the width */
+  margin-right: 20px;  /* Space between the image and text */
+  height: auto;
 }
 
-.eonhometransimg {
-    position: absolute;
-    top: 23%;
-    left: 0;
-    width: 65%;
-    height: auto;
-    z-index: 0;
-    padding: 0px 120px 0px;
+/* Styling for the text container */
+.eonceotxt {
+  flex: 1;  /* Take up 50% of the container */
+  max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
 }
 
-.eonhomelink {
-    position: absolute;
-    padding-bottom: 25%;
-    left: 0;
-    transform: translateY(-50%);
+/* Ensure the image fills the space */
+.eonceoimg picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.button-container {
-    margin: 10px 0;
+/* Text styling for the heading and subheading */
+.eonceotxt h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
-.eon-home > div.eonhomelink > div > p > a {
-    padding: 0px 120px 0px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.eon-home > div.eonhomelink > div > p > a::after {
-    content: '→'; /* You can replace this with a different arrow symbol or use a Unicode for a different arrow */
-    font-size: 18px; /* Adjust the size of the arrow */
-    margin-left: 15px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: 600;
+.eonceotxt h4 {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding-bottom: 20px;
 }
