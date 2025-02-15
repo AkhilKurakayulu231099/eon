@@ -29,4 +29,8 @@
 .eonwelcomeright a {
     color: black !important;
     padding: 0px !important;
+    background-color: transparent !important;
+}
+.eonwelcomeright a:hover {
+    background-color: transparent !important;
 }
