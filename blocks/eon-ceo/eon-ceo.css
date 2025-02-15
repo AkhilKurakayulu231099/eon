@@ -1,5 +1,5 @@
 /* Styling for the overall block */
-.eon-ceo.block {
+.eon-ceo {
   display: flex;
   padding-left: 20px;  /* Left padding for the container */
   padding-right: 20px; /* Right padding for the container */
