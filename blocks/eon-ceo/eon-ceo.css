@@ -1,5 +1,5 @@
 /* Styling for the overall block */
-.eon-ceo {
+.eon-ceo.block {
   display: flex;
   padding-left: 20px;  /* Left padding for the container */
   padding-right: 20px; /* Right padding for the container */
@@ -9,23 +9,23 @@
 
 /* Styling for the image container */
 .eonceoimg {
-  flex: 1;  /* Take up 50% of the container */
+  flex: 0 0 50%;  /* Take up 50% of the container, do not stretch */
   max-width: 50%; /* Ensure it occupies no more than 50% of the width */
   margin-right: 20px;  /* Space between the image and text */
-  height: auto;
-}
-
-/* Styling for the text container */
-.eonceotxt {
-  flex: 1;  /* Take up 50% of the container */
-  max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
+  height: auto;  /* Maintain aspect ratio */
 }
 
 /* Ensure the image fills the space */
 .eonceoimg picture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;  /* Ensures the image covers the entire area */
+}
+
+/* Styling for the text container */
+.eonceotxt {
+  flex: 0 0 50%;  /* Take up 50% of the container */
+  max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
 }
 
 /* Text styling for the heading and subheading */
@@ -41,4 +41,24 @@
   font-style: italic;
   margin: 0;
   padding-bottom: 20px;
+}
+
+/* Styling for the button containers */
+.button-container {
+  margin-top: 10px;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005f8c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+.button-container a:hover {
+  background-color: #003e5f;
 }
