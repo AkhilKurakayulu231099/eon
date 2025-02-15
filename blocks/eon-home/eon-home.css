@@ -8,6 +8,9 @@
     width: 100%;
     height: auto;
 }
+.eonhomeimg > div > picture > img{
+    width: 100%;
+}
 
 .eonhometransimg {
     position: absolute;
