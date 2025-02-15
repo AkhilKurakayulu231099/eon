@@ -1,0 +1,23 @@
+.eon-video > div {
+  display: flex;
+}
+.eon-video {
+  padding: 20px 80px 20px;
+}
+
+.lefttext {
+  width: 40%;
+  box-sizing: border-box;
+  padding-right: 70px;
+}
+
+.rightvideo {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.rightvideo iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+}
