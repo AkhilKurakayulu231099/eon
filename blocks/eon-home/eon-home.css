@@ -30,13 +30,15 @@
 }
 
 .button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Remove background */
+    color: #007bff; /* Make text color like a typical link */
+    text-decoration: underline; /* Add underline for link style */
+    border: none; /* Remove border */
+    font-size: 16px; /* Make text size consistent with links */
 }
 
 .button:hover {
-    background-color: #0056b3;
+    color: #0056b3; /* Darken the link color on hover */
+    text-decoration: underline; /* Keep underline on hover */
 }
