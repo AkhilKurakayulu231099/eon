@@ -26,7 +26,7 @@
   /*flex: 0 0 50%;  /* Take up 50% of the container */
   max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
   padding-left: 35px;  /* Add padding for spacing */
-  padding-bottom: 140px;
+  padding-bottom: 110px;
 }
 
 /* Text styling for the heading and subheading */
@@ -42,6 +42,7 @@
   font-style: italic;
   margin: 0;
   padding-bottom: 20px;
+  line-height: 1.7em;
 }
 
 /* Styling for the button containers */
