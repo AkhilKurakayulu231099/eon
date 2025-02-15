@@ -191,7 +191,7 @@ button {
 
 a.button:any-link,
 button {
-    padding: 0px 20px 0px;
+    /*padding: 0px 20px 0px;*/
     background-color: transparent;
     color: white;
     border: none;
