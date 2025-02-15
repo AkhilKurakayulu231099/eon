@@ -24,6 +24,7 @@
 
 .lefttext a {
     color: black !important;
+    padding: 0px !important;
 }
 .lefttext a:hover {
     background-color: transparent !important;
