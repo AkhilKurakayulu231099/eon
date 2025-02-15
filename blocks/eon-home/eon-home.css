@@ -1,0 +1,43 @@
+.eon-home {
+    position: relative;
+    display: block;
+}
+
+.eonhomeimg {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.eonhometransimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.eonhomelink {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.button-container {
+    margin: 10px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
