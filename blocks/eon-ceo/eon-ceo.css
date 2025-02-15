@@ -26,6 +26,7 @@
   /*flex: 0 0 50%;  /* Take up 50% of the container */
   max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
   padding-left: 20px;  /* Add padding for spacing */
+  padding-bottom: 140px;
 }
 
 /* Text styling for the heading and subheading */
@@ -37,7 +38,7 @@
 }
 
 .eonceotxt h4 {
-  font-size: 18px;
+  font-size: 30px;
   font-style: italic;
   margin: 0;
   padding-bottom: 20px;
