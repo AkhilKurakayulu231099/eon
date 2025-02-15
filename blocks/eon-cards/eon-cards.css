@@ -51,28 +51,28 @@
     bottom: 300px;
     left: 0;
     /* right: 180px; */
-    padding: 10px 40px 0px;
+    padding: 10px 37px 0px;
     text-align: center;
     color: white;
     /* border-radius: 10px; */
 }
 
 .cardheader h4 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
 
 /* Card link button */
 .cardlink {
-  position: absolute;
-  bottom: 10px;  /* Position at the bottom of the image */
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px 37px 0px;
+    /* text-align: center; */
+    /* color: white; */
+    /* border-radius: 10px;
 }
 
 .eon-cards > div > div > ul > li > div.button-container.cardlink > p > a {
