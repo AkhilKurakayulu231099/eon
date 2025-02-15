@@ -1,12 +1,13 @@
 .eon-cards.block {
   position: relative;
+  overflow: hidden;  /* Hide the overflow of li elements */
 }
 
 .eon-cards.block ul {
   display: flex;
-  overflow: hidden;
   padding: 0;
   margin: 0;
+  transition: transform 0.3s ease;
 }
 
 .eon-cards.block li {
@@ -16,12 +17,15 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* For positioning cardheader and cardlink */
   transition: transform 0.3s ease;
+  overflow: hidden; /* Hide anything outside the li element */
 }
 
 .cardimage {
   width: 100%;
   height: 200px;
+  position: relative; /* This is important for positioning the text on top */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   overflow: hidden;
@@ -34,14 +38,21 @@
 }
 
 .cardheader, .cardlink {
-  padding: 15px;
+  position: absolute;
+  bottom: 10px;  /* Position at the bottom of the image */
+  left: 0;
+  right: 0;
+  padding: 10px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);  /* Dark background for text visibility */
+  color: white;
+  border-radius: 10px;
 }
 
-.cardheader p {
+.cardheader h4 {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  margin: 0;
 }
 
 .cardlink a {
@@ -51,15 +62,12 @@
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
 }
 
 .cardlink a:hover {
   background-color: #005f8c;
-}
-
-.cardlink p {
-  margin: 0;
 }
 
 .eon-cards.block .arrow-left, .eon-cards.block .arrow-right {
@@ -72,6 +80,7 @@
   padding: 10px;
   cursor: pointer;
   z-index: 10;
+  border-radius: 50%;
 }
 
 .eon-cards.block .arrow-left {
