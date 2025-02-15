@@ -47,14 +47,14 @@
 
 /* Card header (title) */
 .cardheader {
-  position: absolute;
-  bottom: 150px;  /* Position at the bottom of the image */
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    /* right: 180px; */
+    padding: 10px 40px 0px;
+    text-align: center;
+    color: white;
+    /* border-radius: 10px; */
 }
 
 .cardheader h4 {
