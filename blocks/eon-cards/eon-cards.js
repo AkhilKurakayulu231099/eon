@@ -11,7 +11,7 @@ export default function decorate(block) {
     [...li.children].forEach((div) => {
       if (div.querySelector('picture')) {
         div.classList.add('cardimage');
-      } else if (div.querySelector('p') && div.querySelector('p').textContent.trim()) {
+      } else if (div.querySelector('h4') && div.querySelector('h4').textContent.trim()) {
         div.classList.add('cardheader');
       } else if (div.querySelector('a')) {
         div.classList.add('cardlink');
