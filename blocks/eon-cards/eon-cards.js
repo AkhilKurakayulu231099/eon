@@ -1,19 +1,13 @@
 export default async function decorate(block) {
-  var homeDiv1 = document.querySelector('.eon-video > div > div');
-  homeDiv1.classList.add('lefttext');
+  var maindiv = document.querySelector('.eon-cards > div');
+  maindiv.classList.add('cardsdiv');
 
-  var homeDiv2 = document.querySelector('.eon-video > div > div:nth-child(2)');
-  homeDiv2.classList.add('rightvideo');
+  var subdiv1 = document.querySelector('.eon-cards > div > div');
+  subdiv1.classList.add('cardimage');
 
-  var videoUrl = homeDiv2.querySelector('p').textContent.trim();
+  var subdiv2 = document.querySelector('.eon-cards > div > div:nth-child(2)');
+  subdiv2.classList.add('cardheader');
 
-  if (videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")) {
-    const videoId = videoUrl.split('v=')[1]?.split('&')[0] || videoUrl.split('youtu.be/')[1];
-
-    homeDiv2.innerHTML = `
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${videoId}" 
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
-    `;
-  }
+  var subdiv3 = document.querySelector('.eon-cards > div > div:nth-child(3)');
+  subdiv3.classList.add('cardlink');
 }
