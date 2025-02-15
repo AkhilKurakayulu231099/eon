@@ -63,10 +63,11 @@
   background-color: #003e5f;
 }
 
-eonceotxt a {
+.eonceotxt a {
     color: black !important;
+    padding: 0px !important;
 }
-eonceotxt a:hover {
+.eonceotxt a:hover {
     background-color: transparent !important;
 }
 
