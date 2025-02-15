@@ -88,10 +88,10 @@
   text-decoration: none;
 }
 
-/* Hover effect for the card button */
+/* Hover effect for the card button 
 .cardlink a:hover {
   background-color: #005f8c;
-}
+}*/
 
 /* Scroll arrows styling */
 .eon-cards.block .arrow-left, .eon-cards.block .arrow-right {
