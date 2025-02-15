@@ -30,12 +30,12 @@
 }
 
 .eon-home > div.eonhomelink > div > p > a {
-    padding: 0; /* Remove padding */
-    background-color: transparent; /* Remove background */
-    color: #007bff; /* Make text color like a typical link */
-    text-decoration: underline; /* Add underline for link style */
-    border: none; /* Remove border */
-    font-size: 16px; /* Make text size consistent with links */
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .button:hover {
