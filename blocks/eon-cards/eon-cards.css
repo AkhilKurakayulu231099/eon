@@ -88,7 +88,7 @@
   text-decoration: none;
 }
 
-.eon-cards > div > div > ul > li > div.button-container.cardlink > p > a:hover {
+.cardlink > p > a:hover {
     background-color: transparent !important;
 }
 
