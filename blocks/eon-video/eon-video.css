@@ -1,0 +1,28 @@
+.eon-welcome > div {
+    display: flex;  /* Use flexbox to arrange children side by side */
+    justify-content: space-between; /* Optional, ensures space between the elements */
+}
+
+.eonwelcomeleft,
+.eonwelcomeright {
+    width: 50%; /* Each element will take up 50% of the container */
+    box-sizing: border-box; /* Ensures padding/margin don't cause overflow */
+}
+
+.eonwelcomeleft {
+    padding-right: 20px;
+    padding-left: 70px;
+    
+}
+
+.eonwelcomeleft h2 {
+    font-family: "EONBrixSans", Arial, Geneva, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 0px;
+}
+
+.eonwelcomeright {
+    padding-left: 20px;
+    padding-right: 70px;
+}
