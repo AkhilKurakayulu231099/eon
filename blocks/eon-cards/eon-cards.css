@@ -37,9 +37,21 @@
   object-fit: cover;
 }
 
-.cardheader, .cardlink {
+.cardlink {
   position: absolute;
   bottom: 10px;  /* Position at the bottom of the image */
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);  /* Dark background for text visibility */
+  color: white;
+  border-radius: 10px;
+}
+
+.cardheader {
+  position: absolute;
+  bottom: 190px;  /* Position at the bottom of the image */
   left: 0;
   right: 0;
   padding: 10px;
