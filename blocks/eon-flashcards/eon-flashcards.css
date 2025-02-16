@@ -44,6 +44,7 @@
     font-size: 1.4em;
     font-weight: bold;
     z-index: 0;
+    padding-left: 40px;
 }
 
 /* Button container positioning */
@@ -52,6 +53,7 @@
     bottom: 10px;  /* Position the button at the bottom */
     left: 10px;    /* Adjust if necessary */
     z-index: 0;
+    padding-left: 40px;
 }
 
 /* Button styling */
