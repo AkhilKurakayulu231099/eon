@@ -1,8 +1,8 @@
 /* Styling for the overall block */
 .eon-career > div {
   display: flex;
-  padding-left: 80px;  /* Left padding for the container */
-  padding-right: 80px; /* Right padding for the container */
+  padding-left: 70px;  /* Left padding for the container */
+  padding-right: 70px; /* Right padding for the container */
   align-items: center;  /* Vertically center the items */
   justify-content: space-between;  /* Space out the image and text */
 }
@@ -26,7 +26,7 @@
   /*flex: 0 0 50%;  /* Take up 50% of the container */
   max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
   padding-left: 35px;  /* Add padding for spacing */
-  padding-bottom: 110px;
+  padding-bottom: 75px;
 }
 
 /* Text styling for the heading and subheading */
@@ -68,6 +68,7 @@
 .eoncareertxt a {
     color: black !important;
     padding: 0px !important;
+    text
 }
 .eoncareertxt a:hover {
     background-color: transparent !important;
