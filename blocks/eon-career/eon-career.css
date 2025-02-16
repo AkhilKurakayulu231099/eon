@@ -1,5 +1,5 @@
 /* Styling for the overall block */
-.eon-ceo > div {
+.eon-career > div {
   display: flex;
   padding-left: 80px;  /* Left padding for the container */
   padding-right: 80px; /* Right padding for the container */
@@ -8,21 +8,21 @@
 }
 
 /* Styling for the image container */
-.eonceoimg {
+.eoncareerimg {
   flex: 0 0 50%;  /* Take up 50% of the container */
   max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
   height: auto;  /* Maintain aspect ratio */
 }
 
 /* Ensure the image fills the space */
-.eonceoimg picture img {
+.eoncareerimg picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;  /* Ensures the image covers the entire area */
 }
 
 /* Styling for the text container */
-.eonceotxt {
+.eoncareertxt {
   /*flex: 0 0 50%;  /* Take up 50% of the container */
   max-width: 50%;  /* Ensure it occupies no more than 50% of the width */
   padding-left: 35px;  /* Add padding for spacing */
@@ -30,14 +30,14 @@
 }
 
 /* Text styling for the heading and subheading */
-.eonceotxt h3 {
+.eoncareertxt h3 {
     font-size: 35px;
     font-weight: bold;
     margin: 0;
     padding-bottom: 25px;
 }
 
-.eonceotxt h4 {
+.eoncareertxt h4 {
   font-size: 25px;
   font-style: italic;
   margin: 0;
@@ -65,11 +65,11 @@
   background-color: #003e5f;
 }
 
-.eonceotxt a {
+.eoncareertxt a {
     color: black !important;
     padding: 0px !important;
 }
-.eonceotxt a:hover {
+.eoncareertxt a:hover {
     background-color: transparent !important;
 }
 
