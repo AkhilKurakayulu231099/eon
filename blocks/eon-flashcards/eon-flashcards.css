@@ -62,3 +62,11 @@
     text-decoration: none;
     border-radius: 5px;
 }
+
+.flashcardlink a {
+    color: black !important;
+    padding: 0px !important;
+}
+.flashcardlink a:hover {
+    background-color: transparent !important;
+}
