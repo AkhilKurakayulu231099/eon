@@ -203,6 +203,7 @@ button {
     border: none;
     font-size: 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 a.button:any-link::after {
     content: '→'; /* You can replace this with a different arrow symbol or use a Unicode for a different arrow */
