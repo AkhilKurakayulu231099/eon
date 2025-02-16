@@ -7,7 +7,7 @@
 /* List containing the cards */
 .eon-cards.block ul {
   display: flex;
-  padding: 0;
+  padding: 30px;
   margin: 0;
   transition: transform 0.3s ease;
   overflow-x: auto;  /* Enable horizontal scrolling */
