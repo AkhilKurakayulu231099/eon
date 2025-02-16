@@ -73,5 +73,6 @@
     background-color: transparent !important;
 }
 .flashcardheader h4{
-    padding-right: 30px
+    padding-right: 30px;
+    font-size: 25px;
 }
