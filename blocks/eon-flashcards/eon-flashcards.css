@@ -3,9 +3,11 @@
 .eon-flashcards ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;  /* Space between the flashcards */
+    gap: 40px;
     padding: 0;
     margin: 0;
+    padding-left: 70px;
+    padding-right: 60px;
 }
 
 /* Style each flashcard */
