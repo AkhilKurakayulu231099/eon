@@ -70,3 +70,6 @@
 .flashcardlink a:hover {
     background-color: transparent !important;
 }
+.flashcardheader h4{
+    padding-right: 30px
+}
