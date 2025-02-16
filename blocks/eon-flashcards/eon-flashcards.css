@@ -1,0 +1,125 @@
+/* Main container for the cards */
+.eon-cards.block {
+  position: relative;
+  overflow: hidden;  /* Ensure the content doesn't overflow */
+}
+
+/* List containing the cards */
+.eon-cards.block ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease;
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  padding-bottom: 20px;  /* Optional: Add a little bottom padding */
+}
+
+/* Styling for each card */
+.eon-cards.block li {
+  flex: 0 0 auto;
+  width: 400px;  /* Increase card width */
+  height: 350px;  /* Set a fixed height for the cards */
+  margin: 0 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;  /* Change cursor on hover */
+}
+
+/* Card image */
+.cardimage {
+  width: 100%;
+  height: 100%;  /* Make the image fill the entire card */
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.cardimage picture img {
+  width: 100%;
+  height: 100%;  /* Ensure the image takes the entire height */
+  object-fit: cover;  /* Make sure the image covers the area without distortion */
+}
+
+/* Card header (title) */
+.cardheader {
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    /* right: 180px; */
+    padding: 10px 0px 0px 25px;
+    text-align: center;
+    color: white;
+    /* border-radius: 10px; */
+}
+
+.cardheader h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Card link button */
+.cardlink {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px 0px 0px 25px;
+    /* text-align: center; */
+    /* color: white; */
+    /* border-radius: 10px;*/
+}
+
+.eon-cards > div > div > ul > li > div.button-container.cardlink > p > a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 0px 20px 0px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.cardlink > p > a:hover {
+    background-color: transparent !important;
+}
+
+/* Hover effect for the card button 
+.cardlink a:hover {
+  background-color: #005f8c;
+}*/
+
+/* Scroll arrows styling */
+.eon-cards.block .arrow-left, .eon-cards.block .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;  /* Ensure the arrows appear on top of other elements */
+  border-radius: 50%;
+}
+
+.eon-cards.block .arrow-left {
+  left: 10px;
+}
+
+.eon-cards.block .arrow-right {
+  right: 10px;
+}
+
+/* Adding hover effect to the cards */
+.eon-cards.block li:hover {
+  transform: scale(1.05);  /* Slightly increase the size of the card on hover */
+}
