@@ -29,3 +29,6 @@
 .lefttext a:hover {
     background-color: transparent !important;
 }
+.lefttext h3{
+    padding: 0px !important;
+}
