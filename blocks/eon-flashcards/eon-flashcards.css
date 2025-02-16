@@ -1,4 +1,3 @@
-
 /* Ensure the container is a flexbox layout with wrapping */
 .eon-flashcards ul {
     display: flex;
@@ -59,4 +58,32 @@
     padding: 8px 15px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* Transparent overlay to make the entire card clickable */
+.eon-flashcards li::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);  /* Transparent background */
+    z-index: 1;  /* Make sure the overlay is above the image but below the header/button */
+}
+
+.eon-flashcards li:hover::after {
+    background: rgba(0, 0, 0, 0.1);  /* Optional: add subtle effect when hovering */
+}
+
+/* Make each flashcard a link using a pseudo-element */
+.eon-flashcards li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;  /* Ensure it's clickable above the overlay */
+    text-decoration: none;  /* Remove the underline */
 }
